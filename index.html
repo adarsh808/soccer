@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Premier league</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Bitter|Lobster|Roboto+Slab|Ropa+Sans|Yanone+Kaffeesatz|Shrikhand" rel="stylesheet">
+</head>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"> &nbsp HOME</i></a></li></ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#about"><i class="fa fa-address-card" aria-hidden="true">&nbsp ABOUT</i></a></li></ul>
+    
+ 
+</nav>
+<body>
+<div class="navig image-responsive"></div>
+<div ng-controller="mainController">
+<div class="home"><a href="#"><i class="fa fa-home fa-5x" aria-hidden="true"></i></a><h3 style="font-family:'Shrikhand', cursive;font-size: 2vmax">CLICK HOME</h3></div>
+<div class="search">
+<div class="container">
+	<div class="row" >
+        <div class="col-sm-6 col-sm-offset-3">
+            <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control"  placeholder="Filter by team" ng-model="name" >
+                    <span class="input-group-addon">
+                      <a href="#/filter" > <button type="botton">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button> </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+</div>
+<div class="search">
+<div class="container">
+	<div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control"  placeholder="Filter by year(2015/2016/2017)" ng-model="year" >
+                     <span class="input-group-addon">
+                        <a href="#/filter" > <button type="botton">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button> </a>
+                    </span>
+  
+  
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+</div>
+
+<div class="search">
+<div class="container">
+	<div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control"  placeholder="Filter by score1" ng-model="score.score1">
+                    <span class="input-group-addon">
+                       <a href="#/filter" > <button type="botton">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button> </a>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+</div>
+<div class="search">
+<div class="container">
+	<div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control"  placeholder="Filter by score2" ng-model="score.score2">
+                    <span class="input-group-addon">
+                     <a href="#/filter" > <button type="botton">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button> </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+</div>
+<div ng-view></div><!--dynamic part of the page-->
+</div>
+<footer id='/about' style="background-color: black">
+<div class="container">
+<div class="row">
+<div class=col-lg-12>
+<h2 style="text-align: center;font-size: 3vmax;color: white;">ABOUT</h2>
+<div style="color: white;font-size: 1vmax;"><p>The Premier League is an English professional league for men's association football clubs.The Premier League is a corporation in which the 20 member clubs act as shareholders. Seasons run from August to May. Teams play 38 matches each (playing each team in the league twice, home and away), totalling 380 matches in the season.Most games are played on Saturday and Sunday afternoons; others during weekday evenings. It is colloquially known as the Premiership and outside the UK it is commonly referred to as the English Premier League (EPL).</p><p>
+Get the deatils of all the matches and the teams of EPL season 2015 and season 2016 here!!!!</div>
+</div>
+</div>
+</div>
+<script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
+<script type="text/javascript" src="angular/app.js"></script>
+<script type="text/javascript" src="angular/routes.js"></script>
+</body>
+</html>
